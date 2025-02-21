@@ -14,7 +14,7 @@ public class UnsortedHashSet<E> {
     con  = (LinkedList<E>[])(new LinkedList [10]);
   }
 
-  Ppublic boolean add(E obj) {
+  Public boolean add(E obj) {
     int oldSize = size;
     int index = Math.abs(obj.hashcode()) % con.length; 
     if(con[index] == null)
